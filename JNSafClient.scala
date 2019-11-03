@@ -128,8 +128,8 @@ class JNSafClient(address: String, port: Int, reporter: Reporter) {
         responseOpt = Some(response)
         doneSignal.countDown()
       }
-      if (!doneSignal.await(30, TimeUnit.MINUTES)) {
-        reporter.error(TITLE, "genSummary can not finish within 30 minutes")
+      if (!doneSignal.await(5, TimeUnit.MINUTES)) {
+        reporter.error(TITLE, "genSummary can not finish within 5 minutes")
       }
       responseOpt match {
         case Some(response) =>
