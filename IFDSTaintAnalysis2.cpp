@@ -364,7 +364,8 @@ IFDSTaintAnalysis::initialSeeds() {
         EntryArgs.insert(&Arg);
       }
       EntryArgs.insert(zeroValue());
-      SeedMap.insert(make_pair(&icfg.getMethod(EntryPoint)->front().front(), EntryArgs));
+      SeedMap.insert(make_pair(&icfg.getMethod(EntryPoint)->front().front(),
+       EntryArgs));
 
     }
   }
