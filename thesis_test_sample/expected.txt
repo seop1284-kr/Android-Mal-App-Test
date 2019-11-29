@@ -1,0 +1,10 @@
+native_complexdata.apk 1
+native_complexdata-version.apk 1
+native_int.apk 1
+native_int-version.apk 1
+native_string.apk 1
+native_string-version.apk 1
+ndk_mal.apk 1
+ndk_mal-version.apk 1
+nondk_mal.apk 1
+nondk_mal-version.apk 1
